@@ -46,7 +46,7 @@ from tv_data_source import (
 )
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": "*"}})
+CORS(app)
 
 logging.basicConfig(
     level=logging.INFO, 
